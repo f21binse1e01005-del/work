@@ -1,0 +1,70 @@
+/* ===================================
+   Skills Way LMS - Available Courses Styles
+   ================================== */
+
+.course-card {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+.hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.course-image-wrapper {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.course-image-wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--info-color) 100%);
+}
+
+.category-badge .badge {
+    backdrop-filter: blur(5px);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 0.5em 1em;
+}
+
+/* Modal Styling */
+.modal-content {
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+}
+
+.list-group-item.cursor-pointer {
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.list-group-item:hover {
+    background-color: var(--gray-50);
+}
+
+.form-check-input:checked+div strong {
+    color: var(--primary-color);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+[data-bs-theme="dark"] .course-image-wrapper {
+    background: linear-gradient(135deg, #2d3238 0%, #212529 100%);
+}
+
+[data-bs-theme="dark"] .card {
+    background-color: var(--gray-100);
+}

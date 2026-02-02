@@ -1,0 +1,160 @@
+/* ===================================
+   Skills Way LMS - Notifications Page Styles
+   ================================== */
+
+/* ===== Notifications Page ===== */
+.notifications-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.notification-item {
+    background: white;
+    border-radius: var(--border-radius-lg, 0.5rem);
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid var(--info-color, #17a2b8);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.notification-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.notification-item.unread {
+    background: rgba(13, 110, 253, 0.05);
+    border-left-color: var(--primary-color, #0d6efd);
+    font-weight: 600;
+}
+
+.notification-item.read {
+    opacity: 0.8;
+}
+
+/* Notification Types */
+.notification-item[data-type="assignment"],
+.notification-item[data-type="deadline"] {
+    border-left-color: var(--warning-color, #ffc107);
+}
+
+.notification-item[data-type="grade"] {
+    border-left-color: var(--success-color, #28a745);
+}
+
+.notification-item[data-type="message"] {
+    border-left-color: var(--info-color, #17a2b8);
+}
+
+.notification-item[data-type="announcement"] {
+    border-left-color: var(--danger-color, #dc3545);
+}
+
+/* Notification Icons */
+.notification-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+}
+
+.notification-icon.assignment {
+    background: rgba(255, 193, 7, 0.2);
+    color: var(--warning-color, #ffc107);
+}
+
+.notification-icon.grade {
+    background: rgba(40, 167, 69, 0.2);
+    color: var(--success-color, #28a745);
+}
+
+.notification-icon.message {
+    background: rgba(23, 162, 184, 0.2);
+    color: var(--info-color, #17a2b8);
+}
+
+.notification-icon.announcement {
+    background: rgba(220, 53, 69, 0.2);
+    color: var(--danger-color, #dc3545);
+}
+
+/* Mark as Read Button */
+.mark-read-btn {
+    font-size: 0.875rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+
+/* Filter Buttons */
+.notification-filters {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: 2px solid var(--border-color, #dee2e6);
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    border-color: var(--primary-color, #0d6efd);
+    background: rgba(13, 110, 253, 0.05);
+}
+
+.filter-btn.active {
+    background: var(--primary-color, #0d6efd);
+    color: white;
+    border-color: var(--primary-color, #0d6efd);
+}
+
+/* Empty State */
+.notifications-empty {
+    text-align: center;
+    padding: 3rem 2rem;
+    color: var(--gray-500, #6c757d);
+}
+
+.notifications-empty i {
+    font-size: 4rem;
+    color: var(--gray-300, #ced4da);
+    margin-bottom: 1rem;
+}
+
+/* Dark Mode */
+[data-bs-theme="dark"] .notification-item {
+    background: var(--gray-100, #343a40);
+    border-color: var(--gray-300, #6c757d);
+}
+
+[data-bs-theme="dark"] .notification-item.unread {
+    background: rgba(13, 110, 253, 0.2);
+}
+
+[data-bs-theme="dark"] .filter-btn {
+    background: var(--gray-100, #343a40);
+    border-color: var(--gray-300, #6c757d);
+    color: var(--gray-50, #f8f9fa);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .notification-item {
+        padding: 1rem;
+    }
+
+    .notification-filters {
+        justify-content: center;
+    }
+}

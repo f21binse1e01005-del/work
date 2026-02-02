@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #dcecff;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" width="32" height="32"/>
+  <g id="Layer_1" data-name="Layer 1">
+    <image width="461" height="403" transform="translate(3.1 4.72) scale(.06)" xlink:href="../Layer 3.png"/>
+  </g>
+</svg>

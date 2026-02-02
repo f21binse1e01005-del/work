@@ -1,0 +1,78 @@
+/* Mobile-First Responsive Styles for Skills Way Institute */
+
+/* Base Mobile Styles (320px and up) */
+@media screen and (max-width: 767px) {
+    /* Typography adjustments for mobile */
+    h1 { font-size: 1.8rem !important; }
+    h2 { font-size: 1.6rem !important; }
+    h3 { font-size: 1.4rem !important; }
+    h4 { font-size: 1.2rem !important; }
+    h5 { font-size: 1.1rem !important; }
+    
+    /* Navigation mobile optimizations */
+    .navbar-brand {
+        font-size: 1.2rem !important;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 0.75rem 1rem !important;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .navbar-nav .nav-link:last-child {
+        border-bottom: none;
+    }
+    
+    /* Hero section mobile */
+    .hero-section {
+        padding: 80px 0 60px !important;
+        min-height: auto !important;
+    }
+    
+    .hero-section .display-4 {
+        font-size: 2rem !important;
+        line-height: 1.2;
+    }
+    
+    .hero-section .lead {
+        font-size: 1rem !important;
+    }
+    
+    /* Button adjustments */
+    .btn-lg {
+        padding: 12px 24px !important;
+        font-size: 1rem !important;
+    }
+    
+    .d-flex.gap-3 {
+        gap: 1rem !important;
+    }
+    
+    /* Course cards mobile */
+    .course-card {
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .course-card .card-img-top {
+        height: 180px !important;
+    }
+    
+    .course-card .card-body {
+        padding: 1rem !important;
+    }
+    
+    .course-card .card-title {
+        font-size: 1.1rem !important;
+    }
+    
+    /* Facility icons mobile */
+    .facility-icon {
+        width: 60px !important;
+        height: 60px !important;
+        font-size: 1.5rem !important;
+        margin-bottom: 15px !important;
+    }
+    
+    /* Footer mobile */
+    .footer .col-lg-4,\n    .footer .col-lg-3,\n    .footer .col-lg-2 {\n        margin-bottom: 2rem !important;\n    }\n    \n    .footer h5 {\n        font-size: 1.2rem !important;\n        margin-bottom: 1rem !important;\n    }\n    \n    .social-links a {\n        font-size: 1.2rem !important;\n        margin-right: 1rem !important;\n    }\n    \n    /* Form elements mobile */\n    .form-control {\n        font-size: 16px !important; /* Prevents zoom on iOS */\n        padding: 12px 15px !important;\n    }\n    \n    .form-label {\n        font-weight: 600 !important;\n        margin-bottom: 8px !important;\n    }\n    \n    /* Table responsive */\n    .table-responsive {\n        font-size: 0.9rem !important;\n    }\n    \n    .table th,\n    .table td {\n        padding: 0.5rem !important;\n        vertical-align: middle !important;\n    }\n    \n    /* Modal mobile */\n    .modal-dialog {\n        margin: 1rem !important;\n    }\n    \n    .modal-header {\n        padding: 1rem !important;\n    }\n    \n    .modal-body {\n        padding: 1rem !important;\n    }\n    \n    /* Alert messages mobile */\n    .alert {\n        margin: 1rem !important;\n        padding: 1rem !important;\n        font-size: 0.9rem !important;\n    }\n    \n    /* Back to top button mobile */\n    #backToTop {\n        width: 45px !important;\n        height: 45px !important;\n        margin: 1rem !important;\n    }\n}\n\n/* Small Mobile Devices (320px - 480px) */\n@media screen and (max-width: 480px) {\n    .container {\n        padding-left: 15px !important;\n        padding-right: 15px !important;\n    }\n    \n    .hero-section h1 {\n        font-size: 1.6rem !important;\n    }\n    \n    .btn {\n        width: 100% !important;\n        margin-bottom: 0.5rem !important;\n    }\n    \n    .d-flex.flex-column.flex-sm-row {\n        flex-direction: column !important;\n    }\n    \n    .course-card .card-img-top {\n        height: 160px !important;\n    }\n    \n    .facility-icon {\n        width: 50px !important;\n        height: 50px !important;\n        font-size: 1.2rem !important;\n    }\n    \n    .navbar-brand span {\n        font-size: 1rem !important;\n    }\n}\n\n/* Tablet Portrait (768px - 991px) */\n@media screen and (min-width: 768px) and (max-width: 991px) {\n    .hero-section .display-4 {\n        font-size: 2.5rem !important;\n    }\n    \n    .course-card .card-img-top {\n        height: 220px !important;\n    }\n    \n    .facility-icon {\n        width: 70px !important;\n        height: 70px !important;\n        font-size: 1.8rem !important;\n    }\n}\n\n/* Touch-friendly improvements */\n@media (hover: none) and (pointer: coarse) {\n    .btn {\n        min-height: 44px !important;\n        min-width: 44px !important;\n    }\n    \n    .nav-link {\n        min-height: 44px !important;\n        display: flex !important;\n        align-items: center !important;\n    }\n    \n    .dropdown-item {\n        padding: 12px 20px !important;\n    }\n    \n    .form-control {\n        min-height: 44px !important;\n    }\n    \n    .card {\n        transition: none !important;\n    }\n    \n    .course-card:hover {\n        transform: none !important;\n    }\n}\n\n/* Landscape orientation adjustments */\n@media screen and (orientation: landscape) and (max-height: 500px) {\n    .hero-section {\n        padding: 40px 0 !important;\n    }\n    \n    .hero-section .min-vh-100 {\n        min-height: auto !important;\n    }\n}\n\n/* High DPI displays */\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n    .course-card .card-img-top {\n        image-rendering: -webkit-optimize-contrast;\n    }\n}\n\n/* Dark mode support */\n@media (prefers-color-scheme: dark) {\n    .bg-light {\n        background-color: #2d3748 !important;\n    }\n    \n    .text-muted {\n        color: #a0aec0 !important;\n    }\n    \n    .card {\n        background-color: #4a5568 !important;\n        color: white !important;\n    }\n}\n\n/* Reduced motion support */\n@media (prefers-reduced-motion: reduce) {\n    * {\n        animation-duration: 0.01ms !important;\n        animation-iteration-count: 1 !important;\n        transition-duration: 0.01ms !important;\n    }\n    \n    .course-card:hover {\n        transform: none !important;\n    }\n}\n\n/* Print styles for mobile */\n@media print {\n    .navbar,\n    .footer,\n    .btn,\n    #backToTop {\n        display: none !important;\n    }\n    \n    body {\n        font-size: 12pt !important;\n        line-height: 1.4 !important;\n        color: black !important;\n        background: white !important;\n    }\n    \n    .hero-section {\n        background: white !important;\n        color: black !important;\n    }\n}

@@ -1,0 +1,12 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "^6.8",
+        "phpoffice/phpspreadsheet": "^5.3",
+        "tecnickcom/tcpdf": "^6.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "SkillsWay\\": "src/"
+        }
+    }
+}

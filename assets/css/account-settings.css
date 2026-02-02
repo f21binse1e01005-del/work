@@ -1,0 +1,90 @@
+/* ===================================
+   Skills Way LMS - Account Settings Styles
+   ================================== */
+
+/* Settings Layout */
+.settings-nav .list-group-item {
+    border: none;
+    border-radius: var(--border-radius);
+    margin-bottom: 0.25rem;
+    transition: var(--transition-base);
+    color: var(--gray-600);
+}
+
+.settings-nav .list-group-item:hover {
+    background-color: var(--gray-100);
+    color: var(--primary-color);
+    transform: translateX(5px);
+}
+
+.settings-nav .list-group-item.active {
+    background-color: rgba(13, 110, 253, 0.1);
+    color: var(--primary-color);
+    font-weight: var(--font-weight-semibold);
+    border-left: 3px solid var(--primary-color);
+}
+
+.settings-nav .list-group-item i {
+    width: 20px;
+    text-align: center;
+}
+
+[data-bs-theme="dark"] .settings-nav .list-group-item:hover {
+    background-color: var(--gray-700);
+}
+
+[data-bs-theme="dark"] .settings-nav .list-group-item.active {
+    background-color: rgba(13, 110, 253, 0.15);
+}
+
+/* Switches & Toggles */
+.form-check-input:checked {
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+}
+
+.form-check-label strong {
+    color: var(--gray-800);
+    font-size: 1rem;
+}
+
+[data-bs-theme="dark"] .form-check-label strong {
+    color: var(--gray-200);
+}
+
+/* Privacy & Security Section */
+.security-option {
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    margin-bottom: 1rem;
+    transition: var(--transition-base);
+}
+
+.security-option:hover {
+    border-color: var(--primary-color);
+    background-color: rgba(13, 110, 253, 0.02);
+}
+
+.danger-zone {
+    border: 1px dashed var(--danger-color);
+    background-color: rgba(220, 53, 69, 0.02);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+}
+
+.danger-zone h6 {
+    color: var(--danger-color);
+}
+
+/* Profile Visibility Select */
+.visibility-select {
+    max-width: 300px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .settings-nav {
+        margin-bottom: 2rem;
+    }
+}

@@ -1,0 +1,171 @@
+/* ===================================
+   Skills Way LMS - Help & Support Styles
+   ================================== */
+
+/* Search Box */
+.help-search-box {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.help-search-input {
+    height: 3.5rem;
+    padding-left: 3rem;
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-color);
+    transition: var(--transition-base);
+}
+
+.help-search-input:focus {
+    box-shadow: 0 8px 25px rgba(13, 110, 253, 0.15);
+    transform: translateY(-2px);
+}
+
+.help-search-icon {
+    position: absolute;
+    left: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--gray-400);
+    font-size: 1.25rem;
+}
+
+/* FAQ Accordion */
+.accordion-item {
+    border: none;
+    margin-bottom: 1rem;
+    border-radius: var(--border-radius) !important;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-base);
+}
+
+.accordion-item:hover {
+    box-shadow: var(--shadow);
+}
+
+.accordion-button {
+    padding: 1.25rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--gray-800);
+    background-color: var(--white);
+    border: none;
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--primary-color);
+    background-color: rgba(13, 110, 253, 0.05);
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236c757d'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    transition: transform 0.3s ease;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230d6efd'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-body {
+    padding: 1.25rem;
+    color: var(--gray-600);
+    line-height: 1.6;
+    background-color: var(--white);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+[data-bs-theme="dark"] .accordion-item {
+    background-color: var(--gray-100);
+}
+
+[data-bs-theme="dark"] .accordion-button {
+    background-color: var(--gray-100);
+    color: var(--gray-200);
+}
+
+[data-bs-theme="dark"] .accordion-button:not(.collapsed) {
+    background-color: rgba(13, 110, 253, 0.15);
+    color: var(--primary-light);
+}
+
+[data-bs-theme="dark"] .accordion-body {
+    background-color: var(--gray-100);
+    color: var(--gray-400);
+}
+
+/* Category Cards */
+.help-card {
+    border: none;
+    border-radius: var(--border-radius-lg);
+    transition: var(--transition-base);
+    height: 100%;
+}
+
+.help-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.help-card-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+/* Contact Options */
+.contact-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition-base);
+    font-weight: var(--font-weight-semibold);
+}
+
+.contact-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+/* Support Status */
+.system-status-badge {
+    padding: 0.5rem 0.75rem;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: var(--font-weight-bold);
+    display: inline-flex;
+    align-items: center;
+}
+
+.system-status-badge::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    background-color: currentColor;
+}
+
+.system-status-badge.operational {
+    background-color: rgba(40, 167, 69, 0.1);
+    color: var(--success-color);
+}
+
+.system-status-badge.issues {
+    background-color: rgba(255, 193, 7, 0.1);
+    color: var(--warning-color);
+}
+
+.system-status-badge.down {
+    background-color: rgba(220, 53, 69, 0.1);
+    color: var(--danger-color);
+}
